@@ -1,0 +1,109 @@
+//margins 
+    //margin
+@for $i from 1 to 7 {
+    .m-#{$i} {
+        margin: $i * 10px;
+    }
+}
+    //margin Y
+@for $i from 1 to 7 {
+    .my-#{$i} {
+        margin: $i * 10px 0;
+    }
+}
+   // margin X
+@for $i from 1 to 7 {
+    .mx-#{$i} {
+        margin: 0 $i * 10px;
+    }
+}
+    //margin top
+@for $i from 1 to 7 {
+    .mt-#{$i} {
+        margin-top: $i * 10px;
+    }
+}
+    //margin bottom
+@for $i from 1 to 7 {
+    .mb-#{$i} {
+        margin-bottom: $i * 10px;
+    }
+}
+//paddings
+
+@for $i from 1 to 7 {
+    .p-#{$i} {
+        padding: $i * 10px;
+    }
+}
+
+@for $i from 1 to 7 {
+    .py-#{$i} {
+        padding: $i * 10px 0;
+    }
+}
+
+@for $i from 1 to 7 {
+    .px-#{$i} {
+        padding: 0 $i * 10px;
+    }
+}
+
+
+@for $i from 1 to 7 {
+    .pt-#{$i} {
+        padding-top: $i * 10px;
+    }
+}
+@for $i from 1 to 7 {
+    .pb-#{$i} {
+        padding-bottom: $i * 10px;
+    }
+}
+
+
+
+//flex
+
+.flex-row-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-row-end {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.flex-row-start {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.flex-column-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.flex-column-start {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.flex-column-end {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end
+}
+
+//text align
+
+.align-center {
+    text-align: center;
+}

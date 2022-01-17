@@ -1,0 +1,347 @@
+@use "normalize";
+@use "utilities.scss";
+@use "config" as v;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700;900&display=swap');
+@import "../../node_modules/hamburgers/_sass/hamburgers/hamburgers.scss";
+
+body {
+    background: v.$primary-bg-color;
+    padding: 1.4rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.content-container {
+    max-width: 1100px;
+    width: 100%;
+    background-color:v.$secondary-bg-color;
+    border-radius: 23px;
+    margin: 4rem auto;
+}
+
+header {
+    padding: 20px;
+    nav {
+        ul{
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            li {
+                list-style: none;
+                padding: 20px;
+                a {
+                    text-decoration: none;
+                    color: v.$title-color-text;
+                    transition: all ease-in 0.1s;
+                    &:hover {
+                        color: rgba(0, 0, 0, 0.411);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.about {
+    max-width: 900px;
+    margin: 2rem auto;
+    flex-wrap: wrap;
+    padding: 20px;
+    .img-container {
+        position: relative;
+        z-index: 1;
+        .rowil {
+        display: block;
+        max-width: 300px;
+        width: 100%;
+        border-radius: 50%;
+        }
+        &::before {
+            content: "";
+            position: absolute;
+            top: -10px; right: -10px; bottom: -10px; left: -10px;
+            z-index: -1;
+            background: linear-gradient(88.39deg, #2D7D7D 3.76%, #226291 86.21%);
+            border-radius: 50%;
+        }
+    }
+    
+    .about-desc {
+        max-width: 450px;
+        width: 100%;
+        gap: 15px;
+        .introduce{
+            font-size: v.$step-0;
+            color: v.$regular-color-text;
+        }
+        h1 {
+            font-size: v.$step-2;
+            color: v.$title-color-text;
+        }
+        .about-me {
+            font-size: v.$step--2;
+            color: v.$regular-color-text;
+            line-height: 1.5;
+        }
+        .contact-icon {
+            gap: 10px;
+            img {
+                width: 25px;
+            }
+        }
+    }
+  
+}
+
+hr {
+    max-width: 300px;
+    width: 100%;
+    margin: 4rem auto;
+    border: none;
+    height: 2px;
+    background-color: rgb(136, 136, 136);
+}
+
+.focus {
+    padding: 20px;
+    .feature-intro{
+        font-size: v.$step--1;
+        font-weight: 300;
+        text-align: center;
+    }
+    .focus-features {
+        max-width: 980px;
+        width: 100%;
+        margin: 4rem auto;
+        gap: 50px;
+        flex-wrap: wrap;
+        .feature {
+            max-width: 420px;
+            width: 100%;
+            h3 {
+                font-size: v.$step-1;
+                color: v.$title-color-text;
+                font-weight: 400;
+            }
+            p {
+                font-size: v.$step--2;
+                color: v.$regular-color-text;
+                line-height: 1.4;
+            }
+        }
+    }
+}
+
+.title {
+    color: v.$title-color-text;
+    font-size: v.$step-1;
+}
+
+.regular-text {
+    font-size: v.$step--2;
+    color: v.$regular-color-text;
+    line-height: 1.4;
+}
+
+.tech-container {
+    max-width: 980px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    .logos-container {
+        max-width: 500px;
+        width: 100%;
+        margin: 5rem auto;
+        gap: 40px;
+        flex-wrap: wrap;
+    }
+}
+//Project section
+.projects-section {
+    background: v.$third-bg-color;
+    color: rgb(202, 202, 202);
+    padding: 4rem 10px 10rem 10px;
+    h2 {
+        color: #fff;
+        text-align: center;
+    }
+
+    .projects-container {
+        align-items: flex-start;
+        max-width: 950px;
+        width: 100%;
+        margin: 0 auto;
+        flex-wrap: wrap;
+        gap: 3rem;
+    }
+}
+
+.project {
+    max-width: 350px;
+    width: 100%;
+    .project-img {
+        border: 2px solid #fff;
+        max-width: 350px;
+        width: 100%;
+        padding-bottom: 15%;
+        background-color: #fff;
+        border-radius: 10px;
+        overflow: hidden;
+        img {
+            width: 100%;
+        }
+    }
+    .project-desc {
+        max-width: 80%;
+        background-color: #191D23;
+        padding: 20px;
+        border-radius: 10px;
+        margin-top: -30px;
+        h3 {
+            font-size: v.$step-0;
+            font-weight: 400;
+        }
+        .project-type {
+            font-weight: 200;
+            margin-top: 5px;
+        }
+        .tech-used {
+            gap: 5px;
+            flex-wrap: wrap;
+            p {
+                display: inline-block;
+                padding: 7px;
+                background-color: #2D7D7D;
+                border-radius: 8px;
+            }
+        }
+        .overview {
+            font-size: v.$step--2;
+            font-weight: 400;
+            line-height: 1.5;
+        }
+        ul {
+            margin-left: 40px;
+            margin-top: 8px;
+            li {
+                padding: 5px 0;
+            }
+        }
+    }
+}
+
+
+//contact section
+.contact {
+    text-align: center;
+    padding: 20px;
+}
+form {
+    max-width: 400px;
+    width: 100%;
+    margin: 50px auto;
+    
+    input,textarea {
+        display: block;
+        width: 100%;
+        border:none;
+        border-bottom: 2px solid rgb(185, 185, 185);
+        padding: 20px 0;
+        color: black;
+        margin-top: 4px;
+        resize: none;
+        background-color: inherit;
+        &:focus {
+            outline: none;
+        }
+    }
+    input[type=submit] {
+        background-color: #2D7D7D;
+        display: inline-block;
+        border: none;
+        cursor: pointer;
+        width: 100px;
+        padding: 15px;
+        color: #fff;
+        margin-top: 2rem;
+    }
+    
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:  0 20px;
+    background-color: rgb(182, 182, 182);
+    border-radius: 0 0 23px 23px;
+    .contact-icon {
+        gap: 10px;
+        img {
+            width: 25px;
+        }
+    }
+    padding: 10px;
+}
+
+
+
+//hamburger
+
+.hamburger {
+    position: fixed;
+    right: 5vh;
+    bottom: 5vh;
+    background-color: #2c7b7e;
+    border-radius: 30px;
+    display: none;
+    z-index: 7;
+}
+
+@media only screen and (max-width: 790px) {
+  header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.76);
+    z-index: 5;
+    transform: translateX(-900px);
+    transition: all ease-in 0.4s;
+    &.show {
+        transform: translateX(0);
+    }
+    nav {
+        width: 100%;
+        height: 100%;
+        ul {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            width: 100%;
+            height: 100%;
+            li {
+                a {
+                    color: white;
+                    font-size: v.$step-1;
+                }
+            }
+        }
+    }
+  }
+  .hamburger {
+      display: block;
+  }
+}
+@media only screen and (max-width: 500px) {
+    hr {
+        width: 150px;
+    }
+    footer {
+        flex-direction: column;
+    }
+}
+
+// $ sass --watch src/sass/main.scss public/styles/main.css
