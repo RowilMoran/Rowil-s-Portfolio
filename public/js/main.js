@@ -1,8 +1,8 @@
-const hamburger = document.querySelector(".hamburger");
-const header    = document.querySelector("header")
+import animationOnScroll from "./animation.js";
+import menuHambur from "./hamburger.js";
 
-hamburger.addEventListener("click", e=> {
-    hamburger.classList.toggle("is-active");
-    header.classList.toggle("show");
-    
+document.addEventListener("DOMContentLoaded", e=> {
+    menuHambur(".hamburger", "header", "nav a");
+    animationOnScroll(".fade-in", "appear");
+    animationOnScroll(".slide-in", "appear");
 })

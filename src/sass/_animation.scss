@@ -1,0 +1,28 @@
+.fade-in {
+    opacity: 0;
+    transition: opacity 250ms ease-in;
+    &.appear {
+        opacity: 1;
+    }
+}
+
+
+.from-left {
+    transform: translateX(-40%);
+    opacity: 0;
+}
+
+.from-right {
+    transform: translateX(40%);
+    opacity: 0;
+}   
+
+.from-left, 
+.from-right {
+    transition: opacity 700ms ease-in, transform 700ms ease-in;
+    &.appear {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+

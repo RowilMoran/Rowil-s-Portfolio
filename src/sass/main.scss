@@ -1,6 +1,7 @@
 @use "normalize";
-@use "utilities.scss";
+@use "utilities";
 @use "config" as v;
+@use "animation";
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700;900&display=swap');
 @import "../../node_modules/hamburgers/_sass/hamburgers/hamburgers.scss";
 
@@ -17,6 +18,8 @@ body {
     border-radius: 23px;
     margin: 4rem auto;
 }
+
+//nav
 
 header {
     padding: 20px;
@@ -41,6 +44,7 @@ header {
     }
 }
 
+//about
 .about {
     max-width: 900px;
     margin: 2rem auto;
@@ -300,10 +304,7 @@ footer {
 @media only screen and (max-width: 790px) {
   header {
     position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
+    top: 0;right: 0;left: 0;bottom: 0;
     background-color: rgba(0, 0, 0, 0.76);
     z-index: 5;
     transform: translateX(-900px);
@@ -315,7 +316,6 @@ footer {
         width: 100%;
         height: 100%;
         ul {
-            display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;

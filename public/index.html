@@ -20,11 +20,11 @@
             </nav>
         </header>
         <main>
-            <section class="about  flex-row-center">
+            <section class="about  flex-row-center" id="about">
                 <div class="img-container m-4">
-                    <img class = "rowil"src="assets/rowil_img.jpg" alt="rowil picture">
+                    <img class = "rowil fade-in"src="assets/rowil_img.jpg" alt="rowil picture">
                 </div>
-                <div class="about-desc flex-column-start">
+                <div class="about-desc flex-column-start fade-in">
                     <p class="introduce">Hi there, I'm</p>
                     <h1>Rowil Morán</h1>
                     <p class ="about-me">A while ago, I decided to switch careers to front-end developer, something I didn't know I would enjoy so much. I'm a developer based in Argentina who likes to build awesome web sites  and apps with outstanding user experience.  Learn more about my journey below.</p>
@@ -36,7 +36,7 @@
                 </div>
             </section>
             <hr>
-            <section class="focus">
+            <section class="focus fade-in">
                 <p class="my-5 feature-intro">When I create a project I mainly focus on</p>
                 <div class="focus-features flex-row-center">
                     <div class="feature">
@@ -55,11 +55,11 @@
             </section>
             <hr class="mt-3">
             <section class="tech-container">
-                <div class="technologies">
+                <div class="technologies fade-in">
                     <h2 class="title">Technologies And Tools</h2>
                     <p class="regular-text mt-3"> I took my time to have a solid knowledge of the core technologies of the web. I also learned some useful tools. </p>
                     <div class="logos-container flex-row-center">
-                        <figure class = "flex-column-center" >
+                        <figure class = "flex-column-center " >
                             <img src="assets/icons/tech_logos/html.png" alt="html">
                             <figcaption class="regular-text"> Html5 </figcaption>
                         </figure>
@@ -93,7 +93,7 @@
                         </figure>
                     </div>
                 </div>
-                <div class="future-tech">
+                <div class="future-tech fade-in">
                     <h2 class="title">Currently Learning.</h2>
                     <div class="logos-container flex-row-center">
                         <figure class = "flex-column-center" >
@@ -111,10 +111,10 @@
                     </div>
                 </div>
             </section>
-            <section class="projects-section">
+            <section class="projects-section" id="projects">
                 <h2 class="title m-4">Projects</h2>
                 <div class="projects-container flex-row-center">
-                    <div class="project flex-column-center">
+                    <div class="project flex-column-center slide-in from-left">
                         <div class="project-img">
                             <img src="assets/projects_img/english_club.png" alt="">
                         </div>
@@ -135,7 +135,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="project flex-column-center">
+                    <div class="project flex-column-center slide-in from-right">
                         <div class="project-img">
                             <img src="assets/projects_img/zumba.png" alt="">
                         </div>
@@ -156,7 +156,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="project flex-column-center">
+                    <div class="project flex-column-center slide-in from-left">
                         <div class="project-img">
                             <img src="assets/projects_img/javscriptApp.png" alt="">
                         </div>
@@ -181,7 +181,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="project flex-column-center">
+                    <div class="project flex-column-center slide-in from-right">
                         <div class="project-img">
                             <img src="assets/projects_img/englishPlataform.png" alt="">
                         </div>
@@ -203,7 +203,7 @@
                     </div>
                 </div>
             </section>
-            <section class="contact">
+            <section class="contact fade-in" id="contact">
                 <h2 class="title my-4">Contact me</h2>
                 <p class="regular-text">You can do it in English or Spanish.</p>
                 <form action="https://formsubmit.co/rowilmoran@gmail.com" method="POST" target="_blank">
@@ -229,6 +229,6 @@
           <span class="hamburger-inner"></span>
         </span>
     </button>
-    <script src="js/main.js"></script>
+    <script src="js/main.js" type="module"></script>
 </body>
 </html>

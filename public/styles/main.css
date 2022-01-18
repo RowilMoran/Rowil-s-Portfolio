@@ -26,6 +26,7 @@ html {
  */
 body {
   margin: 0;
+  scroll-behavior: smooth;
 }
 
 /**
@@ -627,6 +628,34 @@ template {
   text-align: center;
 }
 
+.fade-in {
+  opacity: 0;
+  transition: opacity 250ms ease-in;
+}
+.fade-in.appear {
+  opacity: 1;
+}
+
+.from-left {
+  transform: translateX(-40%);
+  opacity: 0;
+}
+
+.from-right {
+  transform: translateX(40%);
+  opacity: 0;
+}
+
+.from-left,
+.from-right {
+  transition: opacity 700ms ease-in, transform 700ms ease-in;
+}
+.from-left.appear,
+.from-right.appear {
+  transform: translateX(0);
+  opacity: 1;
+}
+
 /*!
  * Hamburgers
  * @description Tasty CSS-animated hamburgers
@@ -650,10 +679,10 @@ template {
   overflow: visible;
 }
 .hamburger:hover {
-  opacity: 0.7;
+  opacity: 1;
 }
 .hamburger.is-active:hover {
-  opacity: 0.7;
+  opacity: 1;
 }
 .hamburger.is-active .hamburger-inner,
 .hamburger.is-active .hamburger-inner::before,
@@ -1779,7 +1808,6 @@ footer .contact-icon img {
     height: 100%;
   }
   header nav ul {
-    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
